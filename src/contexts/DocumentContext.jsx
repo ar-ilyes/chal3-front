@@ -15,7 +15,7 @@ export const DocumentProvider = ({ children }) => {
 
   const fetchPipelineRuns = async () => {
     try {
-      const response = await fetch('http://localhost:8000/pipeline-runs')
+      const response = await fetch('https://challenge3-onsite.onrender.com/pipeline-runs')
       const data = await response.json()
       
       // Transform pipeline runs into documents
